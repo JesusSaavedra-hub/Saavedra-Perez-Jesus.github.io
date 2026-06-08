@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marquesinas</title>
+    <link rel="icon" href="codigo-html.png">
 
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#c4e6d5;
+        }
+
+        .encabezado{
+            background:#206600;
+            color:rgb(223, 241, 215);
+            text-align:center;
+            padding:20px;
+        }
+
+        .contenedor{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .seccion{
+            background:rgb(232, 243, 218);
+            margin-bottom:20px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        .titulo{
+            color:#00660e;
+            border-bottom:3px solid #113d03c5;
+            padding-bottom:5px;
+            text-align:center;
+        }
+
+        .marquesina{
+            background:#d9ffe4;
+            padding:10px;
+            border:2px solid #48c538;
+            border-radius:8px;
+            margin-top:10px;
+        }
+
+        .pie{
+            background:#006609;
+            color:rgb(235, 247, 217);
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        img{
+            border-radius:10px;
+            margin:5px;
+            border:3px solid #00660e;
+        }
+
+        .animal{
+            display:inline-block;
+            text-align:center;
+            margin:20px;
+            vertical-align:top;
+        }
+
+        .animal h3{
+            margin-bottom:10px;
+            color:#006600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="encabezado">
+        <h1>Ejemplos de Marquesinas en HTML</h1>
+        <h3>ALUMNO JESUS ANTONIO SAAVEDRA (SI ESTO LO HICE YO Y SOLO YO)</h3>
+    </div>
+
+    <div class="contenedor">
+
+        <!-- Marquesina Izquierda-->
+        <div class="seccion">
+            <h2 class="titulo">1. Marquesina hacia la izquierda</h2>
+
+            <div class="marquesina">
+                <marquee>
+                    Bienvenidos al submódulo de Implementa
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Derecha -->
+        <div class="seccion">
+            <h2 class="titulo">2. Marquesina hacia la derecha</h2>
+
+            <div class="marquesina">
+                <marquee direction="right">
+                    Este texto se mueve hacia la derecha.
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Vertical -->
+        <div class="seccion">
+            <h2 class="titulo">3. Marquesina Vertical Arriba</h2>
+
+            <div class="marquesina">
+                <marquee direction="up" height="120">
+                    Texto<br>
+                    Texto<br>
+                    Este texto se mueve hacia arriba
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Vertical -->
+        <div class="seccion">
+            <h2 class="titulo">4. Marquesina Vertical Abajo</h2>
+
+            <div class="marquesina">
+                <marquee direction="down" height="120">
+                    Texto<br>
+                    Texto<br>
+                    Este texto se mueve hacia abajo
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina con Rebote -->
+        <div class="seccion">
+            <h2 class="titulo">5. Marquesina con Rebote</h2>
+
+            <div class="marquesina">
+                <marquee behavior="alternate">
+                    Texto que rebota de un lado al otro
+                </marquee>
+            </div>
+        </div>
+
+        
+        <!-- Marquesina Rápida -->
+        <div class="seccion">
+            <h2 class="titulo">6. Marquesina Rápida</h2>
+
+            <div class="marquesina">
+                <marquee scrollamount="15">
+                    Texto rápido
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Lenta -->
+        <div class="seccion">
+            <h2 class="titulo">7. Marquesina Lenta</h2>
+
+            <div class="marquesina">
+                <marquee scrollamount="3">
+                    Texto lento
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina con Imágenes -->
+        <div class="seccion">
+            <h2 class="titulo">8. Marquesina con Imágenes</h2>
+
+            <div class="marquesina">
+
+                <marquee direction="up" scrollamount="8">
+
+                    <span class="animal">
+                        <h3>Arriba chivas</h3>
+                        <img src="chivas.jpg" width="120" height="120" alt="Chivas">
+                    </span>
+
+                    <span class="animal">
+                        <h3>Gato</h3>
+                        <img src="gatoo.jpg" width="120" height="120" alt="Gato">
+                    </span>
+
+                    <span class="animal">
+                        <h3>N baby</h3>
+                        <img src="nbaby.jpg" width="120" height="120" alt="N baby">
+                    </span>
+
+                </marquee>
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="seccion">
+            <h2 class="titulo">9. Marquesna Con Link</h2>
+        
+             <div class="marquesina">
+             
+            <marquee>
+              <a href="https://terraria.wiki.gg/">WIKI INCREIBLE DE TERRARIA JUEGENLO AMIGOS</a>
+             </marquee>
+
+
+
+
+             </div>
+           </div>  
+
+
+     <div class="seccion">
+            <h2 class="titulo">10. Marquesina Con Video</h2>
+        
+             <div class="marquesina">
+             
+            <marquee>
+                <video width="640" height="360" controls>
+    <source src="QuitateEugenio!!.mp4" type="video/mp4">
+             </marquee>
+
+
+
+
+             </div>
+           </div>  
+          
+    
+
+
+    <div class="pie">
+        <h3>Práctica de HTML, CSS y Marquesinas</h3>
+    </div>
+
+
+
+</body>
+</html>
